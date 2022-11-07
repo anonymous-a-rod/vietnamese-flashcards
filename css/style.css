@@ -33,6 +33,9 @@ html, body {
     font-size: 48px;
 }
 
+
+
+
 .cards {
     height: 400px;
     max-height: 400px;
@@ -82,4 +85,15 @@ button:hover {
 .audio {
     margin-top: 20px;
     text-align: center;
+}
+
+
+@media (max-width:801px) {
+    .title {
+        margin-bottom: 100px;
+    }
+
+    .audio {
+        margin-bottom: 20px;        
+    }
 }
