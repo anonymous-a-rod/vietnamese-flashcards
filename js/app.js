@@ -42,7 +42,6 @@ const words = {
     welcome: ["Welcome!","Hoan nghênh!"],
     goodmorning: ["Good morning","Chào buổi sáng"],
     goodnight: ["Good night","Chúc ngủ ngon"],
-
     bye: ["Bye!","Tạm biệt!"],
     tyvm: ["Thank you very much","Cảm ơn bạn rất nhiều"],
     yourewelcome: ["You're welcome","Không có gì"],
@@ -51,7 +50,7 @@ const words = {
     congrats: ["Congratulations!","Xin chúc mừng!"],
     imsorry: ["I'm sorry","Tôi xin lỗi"],
     whatdoyourecommend: ["What do you recommend?","Anh (Chị) gợi ý món nào?"],
-    canitakeaphot: ["Can I take a photo?","Tôi có thể chụp ảnh không?"],
+    canitakeaphoto: ["Can I take a photo?","Tôi có thể chụp ảnh không?"],
     whatisthat: ["What is that?","Cái gì vậy?"],
     whereareyoufrom: ["Where are you from?","Bạn đến từ đâu?"],
     iamfrom: ["I am from …","Tôi đến từ …"],
