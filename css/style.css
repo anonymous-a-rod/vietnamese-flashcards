@@ -39,6 +39,7 @@ html, body {
 .cards {
     height: 400px;
     max-height: 400px;
+    min-height: 400px;
 }
 
 .term {
@@ -90,10 +91,21 @@ button:hover {
 
 @media (max-width:801px) {
     .title {
-        margin-bottom: 100px;
+        margin-bottom: 80px;
     }
 
     .audio {
         margin-bottom: 20px;        
+    }
+
+    .button {
+        margin-top: 6px;
+    }
+    .term {
+        margin-bottom: 60px;
+        width: 360px;
+    }
+    .definition {
+        width: 360px;
     }
 }
