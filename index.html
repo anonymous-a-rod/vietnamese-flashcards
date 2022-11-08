@@ -12,7 +12,7 @@
 </head>
 <body onload="getRandomWord()">
     <div class="content">
-    <img class="background" src="/assets/wallpaper.jpg">
+<!--  <img class="background" src="/assets/wallpaper.jpg">   -->  
       
     
     <h1 class="title">Vietnamese</h1>
@@ -29,21 +29,24 @@
     </div>
     
     <div class="button">
-        <button class="check">Check Definition</button>
+        <button class="check">I don't know?</button>
         <button class="next" onclick="countClicks()">Next Word</button>
     </div>
-
-    <div class="audio">
-    <audio controls>
-        <source src="#" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>     
+<!--
+    <div class="playBTN" onclick="playWord()">
+     <img src="/assets/speaker.svg">   
     </div>
+-->
+    <div class="audio">   
+        <audio id="audio" controls>
+            <source src="#" type="audio/mpeg">
+        </audio>     
+    </div>
+    
 
 
 
     <script src="/js/app.js"></script>
-    <script src="/js/count.js"></script>
 </div>
 </body>
 </html>

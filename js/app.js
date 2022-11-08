@@ -108,8 +108,6 @@ const words = {
     rice: ["Rice","Cơm"],
     happy: ["Happy","Vui"],
     tonguetwister: ["Tongue Twister: The chubby woman Ba sells rice cake on the sea shore","Bà ba béo bán bánh bèo bên bờ biển"],
-
-
 }
 
 
@@ -118,12 +116,11 @@ data = Object.entries(words)
 function getRandomWord() {
     randomTerm = data[Math.floor(Math.random() * data.length)]
     term.innerHTML = `<h3>${randomTerm[1][1]}</h3>`
-    definition.innerHTML = `<h3>${randomTerm[1][0]}</h3>`
-    
-    audio.innerHTML = `<audio controls class="audio">
+    definition.innerHTML = `<h3>${randomTerm[1][0]}</h3>`    
+    audio.innerHTML = `<audio controls  id="audio" class="audio">
         <source src="assets/${randomTerm[0]}.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
     </audio>`
+    
 }
 
 
@@ -137,6 +134,13 @@ nextButton.addEventListener('click', function() {
     definition.style.display = 'none';
     getRandomWord();
 });
+
+
+var playBtn = document.getElementById('playBTN');
+
+function playWord(){
+    audio.play();
+}
 
 
 

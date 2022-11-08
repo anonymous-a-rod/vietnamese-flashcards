@@ -1,3 +1,8 @@
+*, *::before, *::after {
+    margin: 0;
+    background-color: #fcfaf2;
+}
+
 html, body {
     font-family: 'Roboto', sans-serif;
     z-index: 1;
@@ -29,12 +34,14 @@ html, body {
     font-family: lobster, 'Roboto', sans-serif;
     font-family: 'Lobster', cursive;
     margin-bottom: 200px;
+    margin-top: 20px;
     opacity: 1;
     font-size: 48px;
 }
 
-
-
+h3 {
+    background-color: white;
+}
 
 .cards {
     height: 400px;
@@ -45,24 +52,29 @@ html, body {
     margin: auto;
 }
 
-.term {
-    border: solid 5px black;
+.term, .definition {
+    border: solid 3px #c6cad4;
     text-align: center;
     border-radius: 16px;
     margin: auto;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    filter: drop-shadow(0px 0px 2px #c6cad4);
+}
+
+.term {
     margin-top: 30px;
     margin-bottom: 100px;
     max-width: 600px;
 }
 
 .definition {
-    border: solid 5px black;
-    text-align: center; 
-    border-radius: 16px;
-    margin: auto;
-    margin-top: 0px;
-    display: none;
-    max-width: 600px;
+    margin-top: 30px;
+        margin-bottom: 100px;
+        max-width: 600px;
 }
 
 .button {
@@ -70,14 +82,28 @@ html, body {
     margin-top: 100px;      
 }
 
-button {
-    color: white;
-    background-color: rgb(89, 216, 89);
+button { 
     padding: 20px 20px;
     border-radius: 16px;
     cursor: pointer;
-    font-size: 20px;
     width: 200px;
+    border: none;
+    margin: 10px;
+    font-weight: 600;
+    font-size: 24px;
+    color: #282a2f;
+}
+
+.next {
+    background-color:#ffbb00;
+    box-shadow: 2px 5px #e4a900;
+}
+
+.check {
+    background-color:#dddcdd;
+    box-shadow: 2px 5px #c6c6c6;
+
+    
 }
 
 button:hover {
@@ -91,7 +117,7 @@ button:hover {
 }
 
 
-@media (max-width:801px) {
+@media (max-width:768px) {
     .title {
         margin-bottom: 80px;
     }
@@ -110,4 +136,14 @@ button:hover {
     .definition {
         width: 360px;
     }
+}
+
+audio {
+    margin-bottom: 20px;
+}
+
+img {
+    height: 30px;
+    width: 100%;
+    cursor: pointer;
 }
