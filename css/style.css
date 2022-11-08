@@ -131,19 +131,24 @@ button:hover {
         margin-top: -40px;
         z-index: 1;
     }
+
     .term {
         margin-bottom: 30px;
         max-width: 360px;
-        
+        box-shadow: none;
+        outline: none;
+                
     }
     .definition {
         max-width: 360px;
         z-index: 10;
         box-shadow: none;
+        outline: none;
     }
     .cards{
         width: 360px;
         overflow: visible;
+        outline: none;
     }
 }
 
