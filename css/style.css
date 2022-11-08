@@ -117,8 +117,18 @@ button:hover {
     text-align: center;
 }
 
+@media (min-width:768px) {
+    .content{
+        margin-top: 2%;
+        height: 85vh;   
+    }
+}
+
+
 
 @media (max-width:768px) {
+
+    
     .title {
         margin-bottom: 10px;
     }
