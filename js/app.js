@@ -2,9 +2,8 @@ const term = document.querySelector('.term');
 const definition = document.querySelector(".definition");
 const checkButton = document.querySelector('.check');
 const nextButton = document.querySelector('.next');
-const audio = document.querySelector('.audio');
-
-
+const audio = document.getElementById('audio');
+const playBtn = document.getElementById('playBTN');
 
 const words = {
     hello: ["Hello","Xin chào"],
@@ -110,24 +109,17 @@ const words = {
     tonguetwister: ["Tongue Twister: The chubby woman Ba sells rice cake on the sea shore","Bà ba béo bán bánh bèo bên bờ biển"],
 }
 
-
 data = Object.entries(words)
 
 function getRandomWord() {
     randomTerm = data[Math.floor(Math.random() * data.length)]
     term.innerHTML = `<h3>${randomTerm[1][1]}</h3>`
     definition.innerHTML = `<h3>${randomTerm[1][0]}</h3>`    
-    audio.innerHTML = `<audio controls  id="audio" class="audio">
-        <source src="assets/${randomTerm[0]}.mp3" type="audio/mpeg">
-    </audio>`
-    
+    audio.src = `assets/${randomTerm[0]}.mp3`;
 }
 
-
 checkButton.addEventListener('click', function() {
-        definition.style.display = 'block';
-      
-    
+    definition.style.display = 'block';
 });
 
 nextButton.addEventListener('click', function() {
@@ -135,14 +127,10 @@ nextButton.addEventListener('click', function() {
     getRandomWord();
 });
 
-
-var playBtn = document.getElementById('playBTN');
-
 function playWord(){
     audio.play();
 }
 
-
-
-
-
+playBtn.addEventListener('click', () => {
+    playWord();
+});
