@@ -139,6 +139,7 @@ button:hover {
     .definition {
         max-width: 360px;
         z-index: 10;
+        box-shadow: none;
     }
     .cards{
         width: 360px;
