@@ -137,6 +137,7 @@ button:hover {
         max-width: 360px;
         box-shadow: none;
         outline: none;
+        filter: none;
                 
     }
     .definition {
@@ -144,6 +145,7 @@ button:hover {
         z-index: 10;
         box-shadow: none;
         outline: none;
+        filter: none;
     }
     .cards{
         width: 360px;
