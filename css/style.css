@@ -8,6 +8,7 @@ html, body {
     z-index: 1;
     font-size: 24px;    
     color: #444444;
+    height: 100vh;
 }
 
 .content {
@@ -119,7 +120,7 @@ button:hover {
 
 @media (max-width:768px) {
     .title {
-        margin-bottom: 80px;
+        margin-bottom: 10px;
     }
 
     .audio {
@@ -127,14 +128,21 @@ button:hover {
     }
 
     .button {
-        margin-top: 6px;
+        margin-top: -40px;
+        z-index: 1;
     }
     .term {
-        margin-bottom: 60px;
-        width: 360px;
+        margin-bottom: 30px;
+        max-width: 360px;
+        
     }
     .definition {
+        max-width: 360px;
+        z-index: 10;
+    }
+    .cards{
         width: 360px;
+        overflow: visible;
     }
 }
 
