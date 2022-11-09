@@ -128,9 +128,12 @@ nextButton.addEventListener('click', function() {
 });
 
 function playWord(){
+
     audio.play();
+    
 }
 
 playBtn.addEventListener('click', () => {
+    audio.currentTime = 0;
     playWord();
 });
